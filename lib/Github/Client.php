@@ -162,6 +162,10 @@ class Client
                 $api = new Api\Repo($this);
                 break;
 
+            case 'statuses':
+                $api = new Api\Statuses($this);
+                break;
+
             case 'team':
             case 'teams':
                 $api = new Api\Organization\Teams($this);
